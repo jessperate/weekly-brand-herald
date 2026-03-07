@@ -444,6 +444,43 @@
     border-top: 1px solid #d4e8da;
   }
 
+  /* ── MOBILE ── */
+  @media (max-width: 768px) {
+    .page { margin: 0; border-left: none; border-right: none; }
+    .masthead { padding: 16px 20px 12px; }
+    .masthead-title { font-size: 42px; }
+    .masthead-eyebrow { flex-direction: column; gap: 2px; }
+    .masthead-sub { flex-direction: column; gap: 2px; }
+    .masthead-sub span { text-align: center !important; }
+    .content-area { padding: 0 20px 20px; }
+    .banner-headline h1 { font-size: 32px; }
+    .banner-deck { font-size: 14px; }
+    .stat-row { flex-wrap: wrap; }
+    .stat-item { flex: 1 1 33%; min-width: 100px; padding: 10px 8px; }
+    .stat-num { font-size: 24px; }
+    .columns-3, .columns-2, .columns-2-equal { grid-template-columns: 1fr; }
+    .col { border-right: none !important; border-bottom: 1px solid #000d05; padding: 20px 0 !important; }
+    .col:last-child { border-bottom: none; }
+    .highlight-box { margin: 0 !important; }
+    .article-headline { font-size: 22px; }
+    .article-headline.lg { font-size: 28px; }
+    .article-headline.sm { font-size: 18px; }
+    .pull-quote p { font-size: 16px; }
+    .ticker { padding: 7px 0; }
+    .footer { flex-direction: column; gap: 4px; text-align: center; padding: 12px 20px; }
+    .integration-logos { grid-template-columns: repeat(3, 1fr); }
+    .hackathon-winners { grid-template-columns: 1fr !important; }
+    .hackathon-winners > div { border-right: none !important; border-bottom: 1px solid #d4e8da; padding: 14px 0 !important; }
+    .hackathon-winners > div:last-child { border-bottom: none; }
+  }
+
+  @media (max-width: 480px) {
+    .masthead-title { font-size: 32px; }
+    .banner-headline h1 { font-size: 26px; }
+    .stat-item { flex: 1 1 50%; }
+    .integration-logos .logo-cell img { height: 14px; }
+  }
+
 </style>
 </head>
 <body>
@@ -623,7 +660,7 @@
         <p>Eoin's words after: "I'm still picking my jaw off the floor." Katelyn Campbell couldn't sit still: "I was just inspired and delighted with the creativity and the thoughtfulness of the solutions presented."</p>
       </div>
 
-      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0; margin-top: 16px; border-top: 2px solid #000d05;">
+      <div class="hackathon-winners" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0; margin-top: 16px; border-top: 2px solid #000d05;">
         <div style="padding: 14px 20px 14px 0; border-right: 1px solid #d4e8da;">
           <span class="article-label" style="color: #EEFF8C; background: #000d05; display: inline-block; padding: 2px 6px; margin-bottom: 6px;">Grand Prize</span>
           <h2 class="article-headline sm">Katelyn Campbell</h2>
