@@ -27,7 +27,7 @@ Use the Granola MCP tools to get meeting highlights:
 
 ## Step 2: Read the current Herald
 
-Read the file `brand-herald.html` in this repo. This is your structural template.
+Read the file `index.html` in this repo. This is your structural template.
 Preserve ALL CSS, fonts, layout classes, and the overall newspaper structure exactly.
 
 ## Step 3: Update the Herald content
@@ -56,13 +56,13 @@ Specific names and dates. The tone of a proud team record, not a marketing email
 If there isn't enough content for a section, keep it but make it shorter.
 Better to have fewer, sharper articles than many weak ones.
 
-Write the updated HTML to `brand-herald.html` using the Edit or Write tool.
+Write the updated HTML to `index.html` using the Edit or Write tool.
 
 ## Step 4: Deploy
 
 Run these git commands to deploy to Vercel:
 ```
-git add brand-herald.html
+git add index.html
 git commit -m "Weekly Brand Herald: $(date +%Y-%m-%d)"
 git push origin main
 ```
