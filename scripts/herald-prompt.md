@@ -73,6 +73,6 @@ Use the Slack MCP tools to send a message to #brand-team:
 
 ":newspaper: *The AirOps Brand Herald* — [today's date]
 
-This week's edition is live: https://weekly-brand-herald.vercel.app
+This week's edition is live: https://lagos-iota.vercel.app/
 
 _Auto-generated from Notion, Slack, and Granola highlights._"

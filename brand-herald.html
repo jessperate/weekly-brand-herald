@@ -260,6 +260,11 @@
   .rule-double { border-top: 3px double #000d05; margin: 0; border-bottom: none; }
 
   /* ── TICKER TAPE ── */
+  @keyframes ticker-scroll {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
+
   .ticker {
     background: #000d05;
     color: #EEFF8C;
@@ -268,11 +273,16 @@
     font-weight: 500;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    padding: 7px 40px;
+    padding: 7px 0;
     white-space: nowrap;
     overflow: hidden;
     border-top: 1px solid #000d05;
     border-bottom: 1px solid #000d05;
+  }
+
+  .ticker-inner {
+    display: inline-block;
+    animation: ticker-scroll 30s linear infinite;
   }
 
   /* ── HIGHLIGHT BOX ── */
@@ -449,7 +459,7 @@
 
   <!-- TICKER -->
   <div class="ticker">
-    ✦ &nbsp; ENTERPRISE INTEGRATIONS LIVE &nbsp; ✦ &nbsp; CONTENT QUALITY LAUNCH MAR 24 &nbsp; ✦ &nbsp; USAGE TAB 2.0 SHIPPED &nbsp; ✦ &nbsp; ZENDESK VP CREATIVE WANTS BRAND KIT &nbsp; ✦ &nbsp; SHIFT SUMMIT SPEAKING SLOT CONFIRMED &nbsp; ✦ &nbsp; VIDEO STUDIO BUILD KICKS OFF &nbsp; ✦ &nbsp; APRIL 14 LAUNCH: AGENTS ARE COMING &nbsp; ✦
+    <span class="ticker-inner">✦ &nbsp; ENTERPRISE INTEGRATIONS LIVE &nbsp; ✦ &nbsp; CONTENT QUALITY LAUNCH MAR 24 &nbsp; ✦ &nbsp; USAGE TAB 2.0 SHIPPED &nbsp; ✦ &nbsp; ZENDESK VP CREATIVE WANTS BRAND KIT &nbsp; ✦ &nbsp; SHIFT SUMMIT SPEAKING SLOT CONFIRMED &nbsp; ✦ &nbsp; VIDEO STUDIO BUILD KICKS OFF &nbsp; ✦ &nbsp; APRIL 14 LAUNCH: AGENTS ARE COMING &nbsp; ✦ &nbsp; ENTERPRISE INTEGRATIONS LIVE &nbsp; ✦ &nbsp; CONTENT QUALITY LAUNCH MAR 24 &nbsp; ✦ &nbsp; USAGE TAB 2.0 SHIPPED &nbsp; ✦ &nbsp; ZENDESK VP CREATIVE WANTS BRAND KIT &nbsp; ✦ &nbsp; SHIFT SUMMIT SPEAKING SLOT CONFIRMED &nbsp; ✦ &nbsp; VIDEO STUDIO BUILD KICKS OFF &nbsp; ✦ &nbsp; APRIL 14 LAUNCH: AGENTS ARE COMING &nbsp; </span>
   </div>
 
   <div class="content-area">
@@ -587,8 +597,8 @@
     </div>
 
     <!-- TICKER 2 -->
-    <div class="ticker" style="margin: 0 -40px; padding: 7px 40px;">
-      ✦ &nbsp; VISUAL BRAND KIT INITIATIVE GREENLIT BY PRODUCT &nbsp; ✦ &nbsp; 2-WEEK LAUNCH CYCLE FRAMEWORK ADOPTED &nbsp; ✦ &nbsp; OXENFREE FILM SCOPING NYC VIDEO STUDIO &nbsp; ✦ &nbsp; AIROPS UNLOCKED: LIVE CUSTOMER SESSIONS LAUNCHING &nbsp; ✦ &nbsp; DEANNA COLEMAN TAKE-HOME UNDER REVIEW &nbsp; ✦
+    <div class="ticker" style="margin: 0 -40px; padding: 7px 0;">
+      <span class="ticker-inner">✦ &nbsp; VISUAL BRAND KIT INITIATIVE GREENLIT BY PRODUCT &nbsp; ✦ &nbsp; 2-WEEK LAUNCH CYCLE FRAMEWORK ADOPTED &nbsp; ✦ &nbsp; OXENFREE FILM SCOPING NYC VIDEO STUDIO &nbsp; ✦ &nbsp; AIROPS UNLOCKED: LIVE CUSTOMER SESSIONS LAUNCHING &nbsp; ✦ &nbsp; DEANNA COLEMAN TAKE-HOME UNDER REVIEW &nbsp; ✦ &nbsp; VISUAL BRAND KIT INITIATIVE GREENLIT BY PRODUCT &nbsp; ✦ &nbsp; 2-WEEK LAUNCH CYCLE FRAMEWORK ADOPTED &nbsp; ✦ &nbsp; OXENFREE FILM SCOPING NYC VIDEO STUDIO &nbsp; ✦ &nbsp; AIROPS UNLOCKED: LIVE CUSTOMER SESSIONS LAUNCHING &nbsp; ✦ &nbsp; DEANNA COLEMAN TAKE-HOME UNDER REVIEW &nbsp; </span>
     </div>
 
     <!-- ROW 2: 2 col -->
