@@ -67,12 +67,12 @@ git commit -m "Weekly Brand Herald: $(date +%Y-%m-%d)"
 git push origin main
 ```
 
-## Step 5: Notify #brand-team
+## Step 5: Notify Jess via Slack DM
 
-Use the Slack MCP tools to send a message to #brand-team:
+Use the Slack MCP tools to send a DM to user ID U09K60X677C (Jess Rosenberg):
 
-":newspaper: *The AirOps Brand Herald* — [today's date]
+":newspaper: *The AirOps Brand Herald — [today's date]*
 
 This week's edition is live: https://weekly-brand-herald.vercel.app/
 
-_Auto-generated from Notion, Slack, and Granola highlights._"
+_Auto-generated from Notion, Slack, and Granola highlights. Forward to #brand-team!_"
