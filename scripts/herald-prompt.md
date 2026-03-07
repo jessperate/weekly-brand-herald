@@ -11,6 +11,7 @@ Use the Slack MCP tools to search for this week's highlights:
 - Search public and private channels for messages from this week about launches, campaigns, brand, content, design, marketing, hiring
 - Use `slack_search_public_and_private` with queries like: "launch", "shipped", "live", "new hire", "customer story", "brand"
 - Also read the #brand-team channel for the latest messages
+- Read the #vibe-marketing channel (C0AGECLMU7R) for hackathon updates, demo day results, and vibe coding highlights
 - Focus on substantive updates, not chatter
 
 ### Notion
@@ -44,7 +45,8 @@ Update these sections with this week's gathered highlights:
 7. **Column 2 (Campaign of the Week)** — the biggest story, written up in detail
 8. **Column 3 (Latest)** — other news + operational updates
 9. **Second ticker** — secondary highlights
-10. **Personnel** — team updates, hires, departures
+10. **Vibe Marketing Hackathon** — recap from #vibe-marketing: demo day results, winners, standout projects
+11. **Personnel** — team updates, hires, departures
 11. **Infrastructure** — tools, processes, shipped behind the scenes
 12. **What's Next** — upcoming items for next week
 13. **From the Field** — customer quotes or external feedback
