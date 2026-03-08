@@ -31,6 +31,25 @@ Use the Granola MCP tools to get meeting highlights:
 Read the file `index.html` in this repo. This is your structural template.
 Preserve ALL CSS, fonts, layout classes, and the overall newspaper structure exactly.
 
+## Step 2b: Pull images from Slack
+
+Search Slack for recent images shared in brand-relevant channels (#vibe-marketing, #brand-team, DMs):
+- Use `slack_search_public_and_private` with `content_types="files"` and `type:images` to find recent images
+- Look for screenshots, photos, GIFs from launches, demo days, team events, campaigns
+- For each relevant image, note its Slack file permalink
+- Use Bash to download images: `curl -sL -o images/<name>.jpg "<slack_file_url>"` (Slack public URLs)
+- Save images to the `images/` directory with descriptive filenames (e.g., `demo-day.jpg`, `marketype-quiz.jpg`)
+- Aim for 2-4 images per edition — quality over quantity
+- If images can't be downloaded (auth required), skip gracefully and use text-only layout
+
+Images in the Herald use the `.halftone-img` CSS class which applies a newspaper halftone effect:
+```html
+<figure class="halftone-img" style="margin: 16px 0;">
+  <img src="images/filename.jpg" alt="Description">
+  <figcaption>Caption text here</figcaption>
+</figure>
+```
+
 ## Step 3: Update the Herald content
 
 Calculate the new date and volume number (Vol 1, No. N where N = weeks since March 6, 2026).
@@ -64,7 +83,7 @@ Write the updated HTML to `index.html` using the Edit or Write tool.
 
 Run these git commands to deploy to Vercel:
 ```
-git add index.html
+git add index.html images/
 git commit -m "Weekly Brand Herald: $(date +%Y-%m-%d)"
 git push origin main
 ```

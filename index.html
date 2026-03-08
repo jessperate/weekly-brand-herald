@@ -444,6 +444,43 @@
     border-top: 1px solid #d4e8da;
   }
 
+  /* ── HALFTONE NEWSPAPER IMAGE ── */
+  .halftone-img {
+    position: relative;
+    overflow: hidden;
+    background: #fffdf7;
+  }
+
+  .halftone-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%) contrast(1.2);
+    mix-blend-mode: multiply;
+  }
+
+  .halftone-img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, #000d05 1px, transparent 1px);
+    background-size: 4px 4px;
+    mix-blend-mode: screen;
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  .halftone-img figcaption {
+    font-family: 'Saans Mono', 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #676c79;
+    padding: 6px 0 0;
+    border-top: 1px solid #d4e8da;
+    margin-top: 8px;
+  }
+
   /* ── MOBILE ── */
   @media (max-width: 768px) {
     .page { margin: 0; border-left: none; border-right: none; }
@@ -589,6 +626,11 @@
           <p>Pat and Cyris delivered the design system. Kate locked every line of copy. Jordan and Trav drove distribution strategy. Jess built the live experience in code -- testing the form under traffic load from a plane on the tarmac.</p>
         </div>
 
+        <figure class="halftone-img" style="margin: 16px 0;">
+          <img src="images/marketype-quiz.jpg" alt="The Marketype Quiz experience">
+          <figcaption>The Marketype Quiz &mdash; Seven archetypes, one unforgettable launch</figcaption>
+        </figure>
+
         <div class="pull-quote">
           <p>"Happy Marketype Day! The most beautiful one pager I have ever seen."</p>
           <cite>-- Travis Tyler, Feb 20, writing from the AEO Conference floor</cite>
@@ -657,6 +699,14 @@
       <div class="article-byline">Eoin Clancy, Jess Rosenberg &nbsp;·&nbsp; #vibe-marketing</div>
       <div class="article-body">
         <p>Eoin's bold pitch on standup two weeks ago turned into the most electric demo day this company has seen. The entire marketing org -- not engineers, marketers -- built functional tools from scratch using Claude Code, deployed to Vercel, and presented to a packed Zoom.</p>
+      </div>
+
+      <figure class="halftone-img" style="margin: 16px 0;">
+        <img src="images/demo-day.jpg" alt="Vibe Marketing Hackathon Demo Day">
+        <figcaption>Demo Day &mdash; March 6, 2026 &mdash; The marketing team presents their vibe-coded creations</figcaption>
+      </figure>
+
+      <div class="article-body">
         <p>Eoin's words after: "I'm still picking my jaw off the floor." Katelyn Campbell couldn't sit still: "I was just inspired and delighted with the creativity and the thoughtfulness of the solutions presented."</p>
       </div>
 
