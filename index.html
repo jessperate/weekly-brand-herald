@@ -444,30 +444,18 @@
     border-top: 1px solid #d4e8da;
   }
 
-  /* ── HALFTONE NEWSPAPER IMAGE ── */
+  /* ── NEWSPAPER IMAGE ── */
   .halftone-img {
     position: relative;
     overflow: hidden;
     background: #fffdf7;
+    border: 3px solid #00c853;
   }
 
   .halftone-img img {
     width: 100%;
     height: auto;
     display: block;
-    filter: grayscale(100%) contrast(1.2);
-    mix-blend-mode: multiply;
-  }
-
-  .halftone-img::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle, #000d05 1px, transparent 1px);
-    background-size: 4px 4px;
-    mix-blend-mode: screen;
-    opacity: 0.3;
-    pointer-events: none;
   }
 
   .halftone-img figcaption {
@@ -707,8 +695,8 @@
       </div>
 
       <figure class="halftone-img" style="margin: 16px 0;">
-        <img src="images/aeo-burn-book.png" alt="AEO Burn Book - Who's actually getting cited by AI?">
-        <figcaption>The AEO Burn Book &mdash; Who's actually getting cited by AI, and who's just getting mentioned</figcaption>
+        <img src="images/demo-day.png" alt="Vibe Marketing Hackathon Demo Day on Zoom">
+        <figcaption>Demo Day &mdash; March 6, 2026 &mdash; The marketing team presents their vibe-coded creations live</figcaption>
       </figure>
 
       <div class="article-body">
